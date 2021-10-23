@@ -1,0 +1,82 @@
+.enrolpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  height: 100vh;
+}
+
+.enrolpage h5 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  max-width: 900px;
+}
+
+.enrolpage p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  max-width: 800px;
+  padding-bottom: 1rem;
+}
+
+.enrolpage h6 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.countDown {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.countDown .count {
+  margin-top: 1rem;
+  background-color: #f1f2f5;
+  color: #304294;
+  font-size: 50px;
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+input[type='text'] {
+  background-color: #f1f2f5;
+  border: 1px solid #e7e7ed;
+  border-radius: 4px;
+  padding: 10px;
+  color: #6b6c7e;
+  width: 300px;
+}
+
+.button {
+  background: #5c70cd;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.button:hover {
+  background-color: #3857dd;
+}
+/*# sourceMappingURL=Enrolpage.css.map */

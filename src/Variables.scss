@@ -1,0 +1,60 @@
+// recurrence
+@mixin links {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 4px;
+  &:hover {
+    color: #5c70cd;
+  }
+}
+
+@mixin buttons {
+  background: $bgBtn;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 20px;
+  &:hover {
+    background-color: #3857dd;
+  }
+}
+
+@mixin centerpage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100vh;
+}
+
+@mixin lgheading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  max-width: 900px;
+}
+
+@mixin smheading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  max-width: 800px;
+  padding-bottom: 1rem;
+}
+
+@mixin inputfield {
+  background-color: #f1f2f5;
+  border: 1px solid #e7e7ed;
+  border-radius: 4px;
+  padding: 10px;
+  color: #6b6c7e;
+  width: 300px;
+}
+
+// variable colors
+$bgBtn: #5c70cd;

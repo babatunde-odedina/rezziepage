@@ -1,0 +1,21 @@
+@import '../../../Variables.scss';
+
+.homepage {
+  @include centerpage;
+}
+
+.l-heading {
+  @include lgheading;
+}
+
+.m-heading {
+  @include smheading;
+}
+
+input[type='text'] {
+  @include inputfield;
+}
+
+.button {
+  @include buttons;
+}
