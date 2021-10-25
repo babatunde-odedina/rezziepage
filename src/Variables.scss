@@ -9,7 +9,7 @@
 }
 
 @mixin buttons {
-  background: $bgBtn;
+  background: $colorBtn;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -18,7 +18,63 @@
   font-weight: 500;
   margin-left: 20px;
   &:hover {
-    background-color: #3857dd;
+    background-color: $hoverColor;
+  }
+}
+
+@mixin socialButton {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid $colorBtn;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px $hoverColor;
+  }
+  .social_btn_icon {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 70px;
+    // width: 10px;
+    // height: 10px;
+  }
+  .social_btn_text {
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 1rem;
+    color: #5c70cd;
+    font-weight: 500;
+  }
+}
+
+@mixin divider {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  > span {
+    position: relative;
+    display: inline-block;
+  }
+  > span:before,
+  > span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #8f8f92;
+  }
+  > span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  > span:after {
+    left: 100%;
+    margin-left: 15px;
   }
 }
 
@@ -57,4 +113,8 @@
 }
 
 // variable colors
-$bgBtn: #5c70cd;
+$colorBtn: #5c70cd;
+$hoverColor: #4c65d4;
+
+@media screen and (min-width: 390px) {
+}
